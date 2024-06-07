@@ -28,6 +28,16 @@ router.get('/tasks', async (req, res) => {
     }
 });
 
+
+router.get('/tasks_by_user_id/:user_id', async (req, res) => {
+    try {
+        const tasks = await TaskServices.findAll({ user_id: req.params.user_id });
+        res.status(200).send(tasks);
+    } catch (error) {
+        res.status(500).send({ error: error.message });
+    }
+});
+
 router.get('/tasks/:id', async (req, res) => {
     try {
         const user = await TaskServices.findOne({ _id: req.params.id });
