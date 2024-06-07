@@ -1,5 +1,3 @@
-Aqui está a documentação completa da API em Node.js, com os módulos de usuários (users) e chamados (tasks):
-
 # Documentação da API
 
 ## Endpoints de Usuários (Users)
@@ -145,5 +143,3 @@ Aqui está a documentação completa da API em Node.js, com os módulos de usuá
   - `status` (string)
   - `user_id` (string)
   - `created_at` (date, default: new Date())
-
-Espero que essa documentação seja útil para o desenvolvimento e uso da sua API. Se precisar de mais alguma coisa, estarei à disposição.
