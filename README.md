@@ -92,6 +92,15 @@
   - `200 OK`: Lista de chamados.
   - `500 Internal Server Error`: Erro interno do servidor.
 
+### Listar Chamados por ID do Usuário
+- **Endpoint:** `/tasks_by_user_id/:user_id`
+- **Método:** `GET`
+- **Parâmetros:**
+  - `user_id` (string): ID do usuário.
+- **Resposta:**
+  - `200 OK`: Lista de chamados.
+  - `500 Internal Server Error`: Erro interno do servidor.
+
 ### Obter Chamado por ID
 - **Endpoint:** `/tasks/:id`
 - **Método:** `GET`
